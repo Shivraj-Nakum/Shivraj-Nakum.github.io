@@ -1,0 +1,13 @@
+title: "My Docker Compose Blog"
+description: "Documenting my Docker Compose experiments"
+url: "https://Shivraj-Nakum.github.io"
+baseurl: ""
+#theme: "" # Leave this empty since you're not using a theme
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+# Plugins
+plugins:
+ - jekyll-sitemap

@@ -1,0 +1,95 @@
+- title: "Step 1: Create dockerfiles in application"
+  description: "create dokcer files in fronten , backend and database folders"
+  command: ""
+  image: "/assets/images/1.jpg"
+  
+- title: "Step 2: Write dockerfile for frontend"
+  description: "This file specifies the base image, install any necessary dependencies, and define the command to start the frontend server."
+  command: ""
+  image: "/assets/images/2.jpg"
+# Add more steps as needed
+
+- title: "Step 3: Write dockerfile for backend"
+  description: "This file specifies the base image, install any necessary dependencies, and define the command to start the backend server."
+  command: ""
+  image: "/assets/images/3.jpg"
+
+- title: "Step 4: Write dockerfile for database"
+  description: "This file specifies the base image for the database, and any necessary setup commands to initialize the database."
+  command: ""
+  image: "/assets/images/4.jpg"
+
+- title: "Step 5: Write init.sql script for database"
+  description: "This script includes commands to create tables, insert initial data into application's database."
+  command: ""
+  image: "/assets/images/5.jpg"
+
+- title: "Step 6: Write docker-compose file for the application"
+  description: ""
+  command: "docker-compose.yml"
+  image: "/assets/images/6.jpg"
+
+- title: "Step 7: Now we will build the application and run "
+  description: ""
+  command: "docker-compose up --build"
+  image: "/assets/images/7.jpg"
+
+- title: "Step 8: Now we can see the container are created and running"
+  description: ""
+  command: ""
+  image: "/assets/images/8.jpg"
+
+- title: "Step 9: We can also check running container through command"
+  description: ""
+  command: "docker ps"
+  image: "/assets/images/9.jpg"
+
+- title: "Step 10: Now you could view frontend on http://localhost/"
+  description: ""
+  command: ""
+  image: "/assets/images/10.jpg"
+
+- title: "Step 11: Now you could view backend at http://localhost:3000/"
+  description: ""
+  command: ""
+  image: "/assets/images/11.jpg"
+
+- title: "Step 12: Now we will view the database"
+  description: ""
+  command: "docker exec -it container_id_of_database mysql -u username -p"
+  image: "/assets/images/12.jpg"
+
+- title: "Step 13: Check if Database is created or not"
+  description: ""
+  command: "show databases;"
+  image: "/assets/images/13.jpg"
+
+- title: "Step 14: Now use the databse"
+  description: ""
+  command: "use databses;"
+  image: "/assets/images/14.jpg"
+
+- title: "Step 15: See the entry in database"
+  description: ""
+  command: "select * from ia_2_table;"
+  image: "/assets/images/15.jpg"
+
+- title: "Step 16: Now check the images"
+  description: ""
+  command: "docker images"
+  image: "/assets/images/16.jpg"
+
+- title: "Step 17: Now tag the image to your dockerhub account"
+  description: ""
+  command: "docker tag cloud_ia-2_three_tier_app-frontend shivraj03/cloud_ia-2_three_tier_app-frontend"
+  image: "/assets/images/18.jpg"
+
+- title: "Step 18: Now push the image on Docker hub account"
+  description: ""
+  command: "docker push shivraj03/cloud_ia-2_three_tier_app-frontend"
+  image: "/assets/images/18.jpg"
+
+- title: "Step 19: Now check the images in dockerhub account"
+  description: ""
+  command: ""
+  image: "/assets/images/19.jpg"

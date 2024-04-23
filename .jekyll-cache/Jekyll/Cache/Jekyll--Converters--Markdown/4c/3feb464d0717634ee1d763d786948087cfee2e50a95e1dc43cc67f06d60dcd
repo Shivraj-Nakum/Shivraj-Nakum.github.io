@@ -1,0 +1,155 @@
+I"`<h1 id="docker-compose-experiment-steps">Docker Compose Experiment Steps</h1>
+
+<div class="step">
+    <h2>Step 1: Create dockerfiles in application</h2>
+    <p>create dokcer files in fronten , backend and database folders</p>
+    
+    <img src="/assets/images/1.jpg" alt="Step 1: Create dockerfiles in application" />
+</div>
+
+<div class="step">
+    <h2>Step 2: Write dockerfile for frontend</h2>
+    <p>This file specifies the base image, install any necessary dependencies, and define the command to start the frontend server.</p>
+    
+    <img src="/assets/images/2.jpg" alt="Step 2: Write dockerfile for frontend" />
+</div>
+
+<div class="step">
+    <h2>Step 3: Write dockerfile for backend</h2>
+    <p>This file specifies the base image, install any necessary dependencies, and define the command to start the backend server.</p>
+    
+    <img src="/assets/images/3.jpg" alt="Step 3: Write dockerfile for backend" />
+</div>
+
+<div class="step">
+    <h2>Step 4: Write dockerfile for database</h2>
+    <p>This file specifies the base image for the database, and any necessary setup commands to initialize the database.</p>
+    
+    <img src="/assets/images/4.jpg" alt="Step 4: Write dockerfile for database" />
+</div>
+
+<div class="step">
+    <h2>Step 5: Write init.sql script for database</h2>
+    <p>This script includes commands to create tables, insert initial data into application's database.</p>
+    
+    <img src="/assets/images/5.jpg" alt="Step 5: Write init.sql script for database" />
+</div>
+
+<div class="step">
+    <h2>Step 6: Write docker-compose file for the application</h2>
+    <p></p>
+    
+    <pre><code>docker-compose.yml</code></pre>
+    
+    <img src="/assets/images/6.jpg" alt="Step 6: Write docker-compose file for the application" />
+</div>
+
+<div class="step">
+    <h2>Step 7: Now we will build the application and run </h2>
+    <p></p>
+    
+    <pre><code>docker-compose up --build</code></pre>
+    
+    <img src="/assets/images/7.jpg" alt="Step 7: Now we will build the application and run " />
+</div>
+
+<div class="step">
+    <h2>Step 8: Now we can see the container are created and running</h2>
+    <p></p>
+    
+    <img src="/assets/images/8.jpg" alt="Step 8: Now we can see the container are created and running" />
+</div>
+
+<div class="step">
+    <h2>Step 9: We can also check running container through command</h2>
+    <p></p>
+    
+    <pre><code>docker ps</code></pre>
+    
+    <img src="/assets/images/9.jpg" alt="Step 9: We can also check running container through command" />
+</div>
+
+<div class="step">
+    <h2>Step 10: Now you could view frontend on http://localhost/</h2>
+    <p></p>
+    
+    <img src="/assets/images/10.jpg" alt="Step 10: Now you could view frontend on http://localhost/" />
+</div>
+
+<div class="step">
+    <h2>Step 11: Now you could view backend at http://localhost:3000/</h2>
+    <p></p>
+    
+    <img src="/assets/images/11.jpg" alt="Step 11: Now you could view backend at http://localhost:3000/" />
+</div>
+
+<div class="step">
+    <h2>Step 12: Now we will view the database</h2>
+    <p></p>
+    
+    <pre><code>docker exec -it container_id_of_database mysql -u username -p</code></pre>
+    
+    <img src="/assets/images/12.jpg" alt="Step 12: Now we will view the database" />
+</div>
+
+<div class="step">
+    <h2>Step 13: Check if Database is created or not</h2>
+    <p></p>
+    
+    <pre><code>show databases;</code></pre>
+    
+    <img src="/assets/images/13.jpg" alt="Step 13: Check if Database is created or not" />
+</div>
+
+<div class="step">
+    <h2>Step 14: Now use the databse</h2>
+    <p></p>
+    
+    <pre><code>use databses;</code></pre>
+    
+    <img src="/assets/images/14.jpg" alt="Step 14: Now use the databse" />
+</div>
+
+<div class="step">
+    <h2>Step 15: See the entry in database</h2>
+    <p></p>
+    
+    <pre><code>select * from ia_2_table;</code></pre>
+    
+    <img src="/assets/images/15.jpg" alt="Step 15: See the entry in database" />
+</div>
+
+<div class="step">
+    <h2>Step 16: Now check the images</h2>
+    <p></p>
+    
+    <pre><code>docker images</code></pre>
+    
+    <img src="/assets/images/16.jpg" alt="Step 16: Now check the images" />
+</div>
+
+<div class="step">
+    <h2>Step 17: Now tag the image to your dockerhub account</h2>
+    <p></p>
+    
+    <pre><code>docker tag cloud_ia-2_three_tier_app-frontend shivraj03/cloud_ia-2_three_tier_app-frontend</code></pre>
+    
+    <img src="/assets/images/18.jpg" alt="Step 17: Now tag the image to your dockerhub account" />
+</div>
+
+<div class="step">
+    <h2>Step 18: Now push the image on Docker hub account</h2>
+    <p></p>
+    
+    <pre><code>docker push shivraj03/cloud_ia-2_three_tier_app-frontend</code></pre>
+    
+    <img src="/assets/images/18.jpg" alt="Step 18: Now push the image on Docker hub account" />
+</div>
+
+<div class="step">
+    <h2>Step 19: Now check the images in dockerhub account</h2>
+    <p></p>
+    
+    <img src="/assets/images/19.jpg" alt="Step 19: Now check the images in dockerhub account" />
+</div>
+:ET
